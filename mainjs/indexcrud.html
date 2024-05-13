@@ -1,0 +1,19 @@
+<form>
+    <input name="campoCriaPost" placeholder="Digite seu post"/>
+    <button type="submit">postar</button>
+</form>
+<ul class="listaDePost">
+    
+</ul>
+<script>
+    const $meuform = document.querySelector('form')
+console.log($meuform)
+
+$meuform.addEventListener('submit', function criapostController(infosDoEvento){
+    infosDoEvento.preventDefault()
+    console.log('criando um post novo !')
+    const $campoCriapost = document.querySelector('input[name="campoCriaPost"]')
+    const $listaDePost = document.querySelector('.listaDePost')
+    $listaDePost.insertAdjacentHTML('afterbegin',`<li>${$campoCriapost.value}</li>`)
+})
+</script>
