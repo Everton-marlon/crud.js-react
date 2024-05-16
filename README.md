@@ -1,4 +1,4 @@
-Estrutura de Dados:
+Crud básico Javascript 
 
 Um objeto chamado minitwiter é criado para armazenar informações do usuário e dos posts.
 Ele possui duas propriedades:
